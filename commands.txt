@@ -1,0 +1,9 @@
+----DOCKER
+docker build -t dilero/k8s-demo:v1.0 .
+docker image ls
+docker login docker.io
+docker push dilero/k8s-demo:v1.0
+docker run -p 8080:8080 k8s/myapp
+docker ps
+docker stop <containerId>
+docker rm <containerId>
