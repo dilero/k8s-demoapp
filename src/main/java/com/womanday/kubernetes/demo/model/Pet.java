@@ -1,14 +1,14 @@
 package com.womanday.kubernetes.demo.model;
 
-public class Animal {
+public class Pet {
     private String type;
     private String name;
     private String color;
 
-    public Animal() {
+    public Pet() {
     }
 
-    public Animal(String type, String name, String color) {
+    public Pet(String type, String name, String color) {
         this.type = type;
         this.name = name;
         this.color = color;
