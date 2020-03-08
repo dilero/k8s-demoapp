@@ -16,7 +16,7 @@ public class DemoController {
     @RequestMapping("/")
     public String index() {
         List<String> names = Arrays.asList("Amterdam", "Berlin");
-        names.forEach( each-> logger.info("Each for equal : " + each.equals(each)));
+        names.forEach( each-> logger.info("Each for equal "+ each+ " : " + each.equals(each)));
         return "Each for equal";
     }
 
