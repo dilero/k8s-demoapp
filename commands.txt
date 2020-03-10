@@ -1,9 +1,19 @@
-----DOCKER
+----DOCKER--
+//build image
 docker build -t dilero/k8s-demo:v1.0 .
+docker build --no-cache -t dilero/k8s-demo:v2.0 .
+
+//list image
 docker image ls
+//login to docekrhub
 docker login docker.io
+//push your image
 docker push dilero/k8s-demo:v1.0
-docker run -p 8080:8080 k8s/myapp
+//run your image
+docker run -p 8080:8080 dilero/k8s-demo:v1.0
+//list containers
 docker ps
+//stop container
 docker stop <containerId>
+//remove container
 docker rm <containerId>

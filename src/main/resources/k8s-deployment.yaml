@@ -13,7 +13,7 @@ spec:
         "beta.kubernetes.io/os": linux
       containers:
         - name: mycat
-          image: dilero/k8s-demo:v1.0
+          image: dilero/k8s-demo:latest
           imagePullPolicy: Always
           resources:
             requests:
